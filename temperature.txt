@@ -1,0 +1,20 @@
+//This is a variable set to define the temperature constant - kelvin
+const kelvin = 0;
+
+//degrees celsius is kelvin - 273.
+const celsius = (kelvin - 273);
+
+//fahrenheit is the equation below. It needs to be rounded after calculation, so we do not set it as a constant.
+let fahrenheit = (celsius * (9/5) + 32);
+fahrenheit = Math.floor(fahrenheit);
+
+//fahrenheit = Math.floor(fahrenheit) - yeah so, it needs to be rounded, therefore we use Math.floor (floor rounds down?)
+console.log('The temperature is ' + fahrenheit + ' degrees Fahrenheit')
+console.log(`The temperature is ${fahrenheit} degrees Fahrenheit.`);
+
+
+//Bonus Objective - How would it work with Newton?
+let newton = (celsius * (33/100))
+newton = Math.floor(newton);
+
+console.log(`The temperature is ${newton} degrees Newton.`);
